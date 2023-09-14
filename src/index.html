@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex justify-center items-center h-screen bg-[#EEEEEE]">
+        <div class="border-2 p-5 space-y-3 bg-teal-400 flex-auto w-80 p-5 max-w-md mr-5 rounded-md">
+            <h1 class="text-center">CREATE NEW BOOK</h1>
+            <label for="title" class="block uppercase">Title</label>
+            <input id="input-title" name="title" type="text" placeholder="insert title here..." class="block px-2 py-2 border-2 w-full"/>
+            <label for="author" class="block uppercase">Author</label>
+            <input id="input-author" name="author" type="text" placeholder="insert author here..." class="block px-2 py-2 border-2 w-full"/>
+            <label for="year" class="block uppercase">Year</label>
+            <input id="input-year" name="year" type="text" placeholder="insert year here..." class="block px-2 py-2 border-2 w-full"/>
+            <button id="submit-button" class="text-center px-3 py-2 bg-[#D2DE32] block w-full">SUBMIT</button>
+        </div>
+        <div class="border-2 p-5 w-80 flex-auto max-w-md bg-teal-400 rounded-md">
+            <h1 class="text-center mb-3">BOOK LIST</h1>
+            <table class="table-auto w-full border-2 border-black">
+                <thead class="">
+                    <tr>
+                        <th>NO</th>
+                        <th>TITLE</th>
+                        <th>AUTHOR</th>
+                        <th>YEAR</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body" class="text-center">
+                    <tr>
+                        <td>1</td>
+                        <td>AAA</td>
+                        <td>AAA</td>
+                        <td>2015</td>
+                        <td><button class="bg-red-500 rounded-xl px-3">DELETE</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
